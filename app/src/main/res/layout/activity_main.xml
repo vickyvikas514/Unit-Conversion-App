@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+   <EditText
+       android:layout_width="160dp"
+       android:layout_height="50dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:hint="@string/your_reading"
+       android:id="@+id/reading"
+       android:inputType="numberDecimal"
+       />
+
+   <TextView
+       android:id="@+id/choose"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:text="@string/choose_your_unit_for_conversion"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/reading" />
+
+   <TextView
+       android:id="@+id/choose_2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/choose_your_unit"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/reading" />
+
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/choose"
+       android:id="@+id/choose_one"
+       android:orientation="vertical"
+       android:checkedButton="@id/miligram"
+
+       >
+   <RadioButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:text="@string/mili_gram"
+       android:id="@+id/miligram"
+       />
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/pound"
+          android:text="@string/pound"/>
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:id="@+id/ounce"
+         android:text="@string/ounce"/>
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:id="@+id/kilogram"
+         android:text="@string/kilogram"/>
+
+   </RadioGroup>
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/choose"
+      android:orientation="vertical"
+      android:checkedButton="@id/miligram_1"
+      android:id="@+id/choose_two">
+
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:text="@string/mili_gram"
+          android:id="@+id/miligram_1"
+          />
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/pound_1"
+          android:text="@string/pound"/>
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/ounce_1"
+          android:text="Ounce"/>
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/kilogram_1"
+          android:text="Kilogram"/>
+   </RadioGroup>
+   <Switch
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/choose_one"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:id="@+id/switch_1"
+      android:text="Round off the conversion"
+       android:layout_marginTop="15dp"
+      />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/button_1"
+       app:layout_constraintEnd_toEndOf="parent"
+       tools:text="your value after conversion is 10"
+       android:id="@+id/result"
+       android:layout_marginTop="10dp"
+       />
+   <Button
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/switch_1"
+       android:id="@+id/button_1"
+       android:text="click to convert"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

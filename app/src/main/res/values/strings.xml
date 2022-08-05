@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Unit Conversion</string>
+    <string name="mili_gram">Mili Gram</string>
+    <string name="pound">Pound</string>
+    <string name="your_reading">YOUR READING</string>
+    <string name="choose_your_unit_for_conversion">choose your unit for conversion</string>
+    <string name="choose_your_unit">choose your unit</string>
+    <string name="ounce">Ounce</string>
+    <string name="kilogram">Kilogram</string>
+    <string name="your_value_after_conversion">your value after conversion is %s</string>
+</resources>

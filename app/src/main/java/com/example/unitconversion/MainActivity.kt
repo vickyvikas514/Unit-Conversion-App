@@ -12,12 +12,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.button1.setOnClickListener { calcconv() }
+        binding.imageView2.setOnClickListener { calcconv() }
     }
 
     private fun calcconv() {
 
-        val stringinput=binding.reading.text.toString()
+        val stringinput=binding.yourReadingEditText.text.toString()
         val inputvalue=stringinput.toDouble()
         if(inputvalue==null){
             binding.result.text=""

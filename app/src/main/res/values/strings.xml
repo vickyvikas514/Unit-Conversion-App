@@ -8,4 +8,5 @@
     <string name="ounce">Ounce</string>
     <string name="kilogram">Kilogram</string>
     <string name="your_value_after_conversion">your value after conversion is %s</string>
+    <string name="round_off_the_conversion">Round off the conversion</string>
 </resources>
